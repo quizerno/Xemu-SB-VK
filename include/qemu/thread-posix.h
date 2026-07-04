@@ -9,6 +9,10 @@ struct QemuMutex {
 #ifdef CONFIG_DEBUG_MUTEX
     const char *file;
     int line;
+
+    struct QemuThread owner;
+    char thread_name_buf[32];
+    const char *thread_name;
 #endif
     bool initialized;
 };

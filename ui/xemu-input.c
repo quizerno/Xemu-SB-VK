@@ -40,6 +40,7 @@
 extern SDL_Window *m_window;
 extern int viewport_coords[4];
 
+<<<<<<< HEAD
 /* //quizerno
 bool sight_on;
 bool aim_on;
@@ -47,6 +48,8 @@ bool aim_on;
 int32_t last_aim_x;
 int32_t last_aim_y; */
 
+=======
+>>>>>>> c18c45e74d0605912917c251118a9d17582cabc1
 #define SBC_PEDAL_MAX 0xFFC0
 
 // #define DEBUG_INPUT
@@ -145,6 +148,7 @@ static const char **peripheral_params_settings_map[4][2] = {
 
 static int sdl_sbc_kbd_scancode_map[52];
 
+<<<<<<< HEAD
 
 int *g_keyboard_sbc_scancode_map[49] = {
 		  &g_config.input.keyboard_sbc_scancode_map.eject,
@@ -211,6 +215,8 @@ int *g_keyboard_sbc_scancode_map[49] = {
 		
 };
 
+=======
+>>>>>>> c18c45e74d0605912917c251118a9d17582cabc1
 int *g_keyboard_scancode_map[25] = {
     &g_config.input.keyboard_controller_scancode_map.a,
     &g_config.input.keyboard_controller_scancode_map.b,

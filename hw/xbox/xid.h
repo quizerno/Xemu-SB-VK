@@ -48,12 +48,14 @@
 #define XID_GET_CAPABILITIES 0x01
 
 #define XID_DEVICETYPE_GAMEPAD 0x01
+#define XID_DEVICETYPE_STEEL_BATTALION 0x80
 
 #define XID_DEVICESUBTYPE_GAMEPAD 0x01
 #define XID_DEVICESUBTYPE_GAMEPAD_S 0x02
 
 #define TYPE_USB_XID_GAMEPAD "usb-xbox-gamepad"
 #define TYPE_USB_XID_GAMEPAD_S "usb-xbox-gamepad-s"
+#define TYPE_USB_XID_STEEL_BATTALION "usb-steel-battalion"
 
 #define GAMEPAD_A 0
 #define GAMEPAD_B 1
@@ -122,6 +124,84 @@ typedef struct USBXIDGamepadState {
     XIDGamepadOutputReport out_state_capabilities;
     uint8_t device_index;
 } USBXIDGamepadState;
+
+typedef struct XIDSteelBattalionReport {
+    uint8_t bReportId;
+    uint8_t bLength;
+    uint32_t dwButtons;
+    uint8_t bMoreButtons;
+    uint16_t wPadding;
+    uint8_t bAimingX;
+    uint8_t bPadding;
+    uint8_t bAimingY;
+    int16_t sRotationLever; // only high byte is used
+    int16_t sSightChangeX; // only high byte is used
+    int16_t sSightChangeY; // only high byte is used
+    uint16_t wLeftPedal; // only high byte is used
+    uint16_t wMiddlePedal; // only high byte is used
+    uint16_t wRightPedal; // only high byte is used
+    uint8_t ucTunerDial; // low nibble, The 9 o'clock postion is 0, and the 6
+                         // o'clock position is 12
+    uint8_t ucGearLever; // gear lever 1~5 for gear 1~5, 7~13 for gear R,N,1~5,
+                         // 15 for gear R
+} QEMU_PACKED XIDSteelBattalionReport;
+
+// Based on:
+// https://github.com/Ryzee119/ogx360/blob/master/Firmware/src/usbd/usbd_xid.h:195
+typedef struct XIDSteelBattalionOutputReport {
+    uint8_t report_id;
+    uint8_t length;
+    uint8_t EmergencyEject : 4;
+    uint8_t CockpitHatch : 4;
+    uint8_t Ignition : 4;
+    uint8_t Start : 4;
+    uint8_t OpenClose : 4;
+    uint8_t MapZoomInOut : 4;
+    uint8_t ModeSelect : 4;
+    uint8_t SubMonitorModeSelect : 4;
+    uint8_t MainMonitorZoomIn : 4;
+    uint8_t MainMonitorZoomOut : 4;
+    uint8_t ForecastShootingSystem : 4;
+    uint8_t Manipulator : 4;
+    uint8_t LineColorChange : 4;
+    uint8_t Washing : 4;
+    uint8_t Extinguisher : 4;
+    uint8_t Chaff : 4;
+    uint8_t TankDetach : 4;
+    uint8_t Override : 4;
+    uint8_t NightScope : 4;
+    uint8_t F1 : 4;
+    uint8_t F2 : 4;
+    uint8_t F3 : 4;
+    uint8_t MainWeaponControl : 4;
+    uint8_t SubWeaponControl : 4;
+    uint8_t MagazineChange : 4;
+    uint8_t Comm1 : 4;
+    uint8_t Comm2 : 4;
+    uint8_t Comm3 : 4;
+    uint8_t Comm4 : 4;
+    uint8_t Comm5 : 4;
+    uint8_t : 4;
+    uint8_t GearR : 4;
+    uint8_t GearN : 4;
+    uint8_t Gear1 : 4;
+    uint8_t Gear2 : 4;
+    uint8_t Gear3 : 4;
+    uint8_t Gear4 : 4;
+    uint8_t Gear5 : 4;
+    uint8_t not_used;
+} QEMU_PACKED XIDSteelBattalionOutputReport;
+
+typedef struct USBXIDSteelBattalionState {
+    USBDevice dev;
+    USBEndpoint *intr;
+    const XIDDesc *xid_desc;
+    XIDSteelBattalionReport in_state;
+    XIDSteelBattalionReport in_state_capabilities;
+    XIDSteelBattalionOutputReport out_state;
+    XIDSteelBattalionOutputReport out_state_capabilities;
+    uint8_t device_index;
+} USBXIDSteelBattalionState;
 
 void update_input(USBXIDGamepadState *s);
 void update_output(USBXIDGamepadState *s);

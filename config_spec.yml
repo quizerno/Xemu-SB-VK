@@ -285,6 +285,7 @@ input:
     middle_pedal:
       type: integer
       default: 22 # s
+<<<<<<< HEAD
     # sight_change_x: #correct?
        # type: integer
        # default: 0         
@@ -303,6 +304,8 @@ input:
     # middle_pedal_axis:
       # type: integer
       # default: 5
+=======
+>>>>>>> c18c45e74d0605912917c251118a9d17582cabc1
   gamepad_binding_map:
     a: 
       type: integer
