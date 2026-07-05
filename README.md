@@ -1,11 +1,11 @@
 Fork of faha223/xemu 
 
 **Features**
--Option to turn On/Off hotkeys
--Removes double click toggling fullscreen
--New Hotkeys for Displaying/Hiding menu and cursor
--Fully rebindable keyboard keys for Steel Battalion
--Minor fixes such as Steel Battalion Controller Graphic Display Improvements
+* Option to turn On/Off hotkeys
+* Removes double click toggling fullscreen
+* New Hotkeys for Displaying/Hiding menu and cursor
+* Fully rebindable keyboard keys for Steel Battalion
+* Minor fixes such as Steel Battalion Controller Graphic Display Improvements
 
 **To Do**
 -Add all features to the non-vulkan branch version
