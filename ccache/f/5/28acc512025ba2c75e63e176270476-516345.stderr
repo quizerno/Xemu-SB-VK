@@ -1,0 +1,8 @@
+In file included from ../ui/thirdparty/stb_image/stb_image_impl.c:2:
+../ui/thirdparty/stb_image/stb_image.h:4958:14: warning: no previous prototype for function 'stbi__unpremultiply_on_load_thread' [-Wmissing-prototypes]
+ 4958 | STBIDEF void stbi__unpremultiply_on_load_thread(int flag_true_if_should_unpremultiply)
+      |              ^
+../ui/thirdparty/stb_image/stb_image.h:4958:9: note: declare 'static' if the function is not intended to be used outside of this translation unit
+ 4958 | STBIDEF void stbi__unpremultiply_on_load_thread(int flag_true_if_should_unpremultiply)
+      |         ^
+1 warning generated.

@@ -1,0 +1,9 @@
+In file included from ../subprojects/SDL3-3.4.10/src/core/windows/SDL_xinput.c:21:
+In file included from ../subprojects/SDL3-3.4.10/src/SDL_internal.h:250:
+In file included from ../subprojects/SDL3-3.4.10/include/SDL3/SDL_intrin.h:235:
+In file included from /opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/intrin.h:12:
+In file included from /opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/intrin.h:122:
+[1m/opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/mm3dnow.h:16:2: [0m[0;1;35mwarning: [0m[1m"The <mm3dnow.h> header is deprecated, and 3dNow! intrinsics are unsupported. For other intrinsics, include <x86intrin.h>, instead." [-W#warnings][0m
+   16 | #warning [0;32m"The <mm3dnow.h> header is deprecated, and 3dNow! intrinsics are unsupported. For other intrinsics, include <x86intrin.h>, instead."[0m
+      | [0;1;32m ^
+[0m1 warning generated.

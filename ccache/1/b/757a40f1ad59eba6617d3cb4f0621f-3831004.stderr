@@ -1,0 +1,29 @@
+../hw/xbox/nv2a/pgraph/glsl/common.c:80:9: warning: variable 'zmax' is used uninitialized whenever 'if' condition is true [-Wsometimes-uninitialized]
+   80 |         assert(0);
+      |         ^~~~~~~~~
+/xemu/include/qemu/osdep.h:264:20: note: expanded from macro 'assert'
+  264 | #define assert(x)  g_assert(x)
+      |                    ^~~~~~~~~~~
+../../opt/mxe/usr/x86_64-w64-mingw32.static/include/glib-2.0/glib/gtestutils.h:276:49: note: expanded from macro 'g_assert'
+  276 |                                              if G_LIKELY (expr) ; else \
+      |                                                 ^~~~~~~~~~~~~~~
+../../opt/mxe/usr/x86_64-w64-mingw32.static/include/glib-2.0/glib/gmacros.h:1250:25: note: expanded from macro 'G_LIKELY'
+ 1250 | #define G_LIKELY(expr) (__builtin_expect (_G_BOOLEAN_EXPR(expr), 1))
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../hw/xbox/nv2a/pgraph/glsl/common.c:87:20: note: uninitialized use occurs here
+   87 |     clipRange[1] = zmax;
+      |                    ^~~~
+../hw/xbox/nv2a/pgraph/glsl/common.c:80:9: note: remove the 'if' if its condition is always false
+   80 |         assert(0);
+      |         ^
+/xemu/include/qemu/osdep.h:264:20: note: expanded from macro 'assert'
+  264 | #define assert(x)  g_assert(x)
+      |                    ^
+../../opt/mxe/usr/x86_64-w64-mingw32.static/include/glib-2.0/glib/gtestutils.h:276:46: note: expanded from macro 'g_assert'
+  276 |                                              if G_LIKELY (expr) ; else \
+      |                                              ^
+../hw/xbox/nv2a/pgraph/glsl/common.c:71:15: note: initialize the variable 'zmax' to silence this warning
+   71 |     float zmax;
+      |               ^
+      |                = 0.0
+1 warning generated.

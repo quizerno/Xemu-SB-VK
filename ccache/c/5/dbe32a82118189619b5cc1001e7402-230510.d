@@ -1,0 +1,26 @@
+CMakeFiles/cmTC_728d7.dir/src.c.obj: \
+ /xemu/build/subprojects/SDL3-3.4.10/__CMake_build/CMakeFiles/CMakeScratch/TryCompile-UNC6F0/src.c \
+ ../../../../../../../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/nmmintrin.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/smmintrin.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/tmmintrin.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/pmmintrin.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/emmintrin.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/xmmintrin.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/mmintrin.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/mm_malloc.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/stdlib.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/corecrt.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/_mingw.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/_mingw_mac.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/vadefs.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/vadefs.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/limits.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/limits.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/crtdefs.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/malloc.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/popcntintrin.h \
+ ../../../../../../../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/crc32intrin.h

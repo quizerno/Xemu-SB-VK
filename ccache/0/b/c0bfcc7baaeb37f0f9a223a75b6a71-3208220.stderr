@@ -1,0 +1,13 @@
+../ui/thirdparty/fpng/fpng.cpp:1843:26: warning: result of comparison of constant 4096 with expression of type 'uint8_t' (aka 'unsigned char') is always true [-Wtautological-constant-out-of-range-compare]
+ 1843 |                         assert(pCode_sizes[i] <= FPNG_DECODER_TABLE_SIZE);
+      |                                ~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~
+/opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/assert.h:52:7: note: expanded from macro 'assert'
+   52 |  ((!!(_Expression)) || \
+      |       ^~~~~~~~~~~
+../ui/thirdparty/fpng/fpng.cpp:113:25: warning: unused function 'simple_swap64' [-Wunused-function]
+  113 |         static inline uint64_t simple_swap64(uint64_t x) { return (((uint64_t)simple_swap32((uint32_t)x)) << 32U) | simple_swap32((uint32_t)(x >> 32U)); }
+      |                                ^~~~~~~~~~~~~
+../ui/thirdparty/fpng/fpng.cpp:124:25: warning: unused function 'swap64' [-Wunused-function]
+  124 |         static inline uint64_t swap64(uint64_t x)
+      |                                ^~~~~~
+3 warnings generated.

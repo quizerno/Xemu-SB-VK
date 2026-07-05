@@ -1,0 +1,12 @@
+../ui/xui/gl-helpers.cc:826:6: warning: no previous prototype for function 'RenderSteelBattalionController' [-Wmissing-prototypes]
+  826 | void RenderSteelBattalionController(float frame_x, float frame_y, uint32_t primary_color,
+      |      ^
+../ui/xui/gl-helpers.cc:826:1: note: declare 'static' if the function is not intended to be used outside of this translation unit
+  826 | void RenderSteelBattalionController(float frame_x, float frame_y, uint32_t primary_color,
+      | ^
+      | static 
+../ui/xui/gl-helpers.cc:1136:43: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+ 1136 |     static ControllerState fake_state = { 0 };
+      |                                           ^
+      |                                           {}
+2 warnings generated.

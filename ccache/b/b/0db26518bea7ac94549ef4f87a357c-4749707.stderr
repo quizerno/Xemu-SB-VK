@@ -1,0 +1,7 @@
+../ui/xemu-input.c:1137:9: warning: 'SDL_GET_AXIS' macro redefined [-Wmacro-redefined]
+ 1137 | #define SDL_GET_AXIS(state, axis)    \
+      |         ^
+../ui/xemu-input.c:1074:9: note: previous definition is here
+ 1074 | #define SDL_GET_AXIS(state, axis)    \
+      |         ^
+1 warning generated.

@@ -39,6 +39,7 @@
 #include "../xemu-net.h"
 #include "../xemu-os-utils.h"
 #include "../xemu-xbe.h"
+#include "../xemu-controllers.h"
 
 #include "../thirdparty/fatx/fatx.h"
 
@@ -615,7 +616,7 @@ void MainMenuInputView::Draw()
 		
 		    if (ImGui::Button("01Reset to Default")) {
             xemu_input_reset_input_mapping(bound_state);
-			ImGui::PopID();
+			//ImGui::PopID();
         }
 		
 		
@@ -656,13 +657,15 @@ void MainMenuInputView::Draw()
 
         if (ImGui::Button("02Reset to Default")) {
             xemu_input_reset_sbc_mapping(bound_state);
-			ImGui::PopID();
+		//	ImGui::PopID();
         }
         ImGui::PopStyleColor();
         ImGui::PopID();
     }
 
     SectionTitle("Options");
+	Toggle("Disable Hotkeys", &g_config.input.hotkeys,
+           "Turns off single button hotkeys");
     Toggle("Auto-bind controllers", &g_config.input.auto_bind,
            "Bind newly connected controllers to any open port");
     Toggle("Background controller input capture",
@@ -1111,11 +1114,11 @@ void MainMenuDisplayView::Draw()
 
     SectionTitle("Interface");
     Toggle("Show main menu bar", &g_config.display.ui.show_menubar,
-           "Show main menu bar when mouse is activated");
+           "Show main menu");
     Toggle("Show notifications", &g_config.display.ui.show_notifications,
            "Display notifications in upper-right corner");
     Toggle("Hide mouse cursor", &g_config.display.ui.hide_cursor,
-           "Hide the mouse cursor when it is not moving");
+           "Hide the mouse cursor always");
 
     int ui_scale_idx;
     if (g_config.display.ui.auto_scale) {

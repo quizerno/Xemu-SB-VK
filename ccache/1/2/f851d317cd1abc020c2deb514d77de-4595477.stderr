@@ -1,0 +1,7 @@
+../hw/usb/hcd-ohci.c:2067:13: warning: unused function 'ohci_realize_pxa' [-Wunused-function]
+ 2067 | static void ohci_realize_pxa(DeviceState *dev, Error **errp)
+      |             ^~~~~~~~~~~~~~~~
+../hw/usb/hcd-ohci.c:2084:13: warning: unused function 'usb_ohci_reset_sysbus' [-Wunused-function]
+ 2084 | static void usb_ohci_reset_sysbus(DeviceState *dev)
+      |             ^~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.

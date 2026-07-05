@@ -36,6 +36,7 @@ RebindEventResult SBCKeyboardRebindingMap::ConsumeRebindEvent(SDL_Event *event)
     // applied
     if (event->type == SDL_EVENT_KEY_UP) {
         *(g_keyboard_sbc_scancode_map[m_table_row]) = event->key.scancode;
+	
         return RebindEventResult::Complete;
     }
 
@@ -211,7 +212,34 @@ RebindEventResult SBCRebindingMap::HandleButtonEvent(
     *(button_map[m_table_row]) = event->button;
 
     return RebindEventResult::Complete;
-}//end of sbcrebinding
+}
+
+RebindEventResult SBCRebindingMap::HandleAxisEvent(
+    SDL_GamepadAxisEvent *event)
+{
+    (void)event;
+    return RebindEventResult::Ignore;
+}
+
+RebindEventResult
+SBCRebindingMap::ConsumeRebindEvent(SDL_Event *event)
+{
+    switch (event->type) {
+    case SDL_EVENT_GAMEPAD_REMOVED:
+        return (m_state->sdl_joystick_id == event->gdevice.which) ?
+                   RebindEventResult::Complete :
+                   RebindEventResult::Ignore;
+    case SDL_EVENT_GAMEPAD_BUTTON_UP:
+    case SDL_EVENT_GAMEPAD_BUTTON_DOWN:
+        return HandleButtonEvent(&event->gbutton);
+    case SDL_EVENT_GAMEPAD_AXIS_MOTION:
+        return HandleAxisEvent(&event->gaxis);
+    default:
+        return RebindEventResult::Ignore;
+    }
+}
+
+//end of sbcrebinding
 
 RebindEventResult
 ControllerGamepadRebindingMap::ConsumeRebindEvent(SDL_Event *event)

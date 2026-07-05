@@ -1,0 +1,31 @@
+subprojects/SPIRV-Reflect/libspirv_reflect_static.a.p/spirv_reflect.c.obj: \
+ ../subprojects/SPIRV-Reflect/spirv_reflect.c \
+ ../subprojects/SPIRV-Reflect/spirv_reflect.h \
+ ../subprojects/SPIRV-Reflect/./include/spirv/unified1/spirv.h \
+ ../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/stdint.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/stdint.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/crtdefs.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/corecrt.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/_mingw.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/_mingw_mac.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ ../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/vadefs.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/vadefs.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ ../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/stddef.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/stddef.h \
+ ../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/__stddef_wchar_t.h \
+ ../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/__stddef_wint_t.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/string.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/assert.h \
+ ../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/stdbool.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/crtdbg.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/sec_api/crtdbg_s.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/stdlib.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+ ../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/limits.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/limits.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/malloc.h \
+ ../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/mm_malloc.h

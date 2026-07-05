@@ -59,6 +59,9 @@ input:
   allow_vibration:
     type: bool
     default: true
+  hotkeys:
+    type: bool
+    default: false
   background_input_capture: bool
   keyboard_controller_scancode_map:
     # Scancode reference : https://github.com/libsdl-org/SDL/blob/main/include/SDL_scancode.h
@@ -298,8 +301,8 @@ input:
       # type: integer
       # default: 3
     # right_pedal_axis:
-      # type: integer
       # default: 4
+      # type: integer
     # middle_pedal_axis:
       # type: integer
       # default: 5

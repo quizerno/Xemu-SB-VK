@@ -1666,11 +1666,15 @@ void xemu_input_reset_input_mapping(ControllerState *state)
 }
 void xemu_input_reset_sbc_mapping(ControllerState *state)
 {
-    if (state->type == INPUT_DEVICE_SDL_GAMEPAD) {
+	
+	xemu_settings_reset_sbc_keyboard_mapping();
+/*     if (state->type == INPUT_DEVICE_SDL_GAMEPAD) {
         char guid[35] = { 0 };
         SDL_GUIDToString(state->sdl_joystick_guid, guid, sizeof(guid));
         xemu_settings_reset_controller_mapping(guid);
     } else if (state->type == INPUT_DEVICE_SDL_KEYBOARD) {
         xemu_settings_reset_sbc_keyboard_mapping();
-    }
+    } */
 }
+
+

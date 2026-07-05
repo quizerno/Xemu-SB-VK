@@ -1,0 +1,14 @@
+In file included from ../ui/xui/main.cc:40:
+In file included from ../ui/xui/snapshot-manager.hh:22:
+In file included from ../ui/xui/../xemu-snapshots.h:29:
+In file included from /xemu/include/block/snapshot.h:28:
+/xemu/include/block/graph-lock.h:57:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wextern-c-compat]
+   57 | typedef struct TSA_CAPABILITY("mutex") BdrvGraphLock {
+      |         ^
+/xemu/include/block/graph-lock.h:206:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wextern-c-compat]
+  206 | typedef struct GraphLockable { } GraphLockable;
+      |         ^
+/xemu/include/block/graph-lock.h:257:9: warning: empty struct has size 0 in C, size 1 in C++ [-Wextern-c-compat]
+  257 | typedef struct GraphLockableMainloop { } GraphLockableMainloop;
+      |         ^
+3 warnings generated.

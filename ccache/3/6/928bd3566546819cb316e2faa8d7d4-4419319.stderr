@@ -1,0 +1,13 @@
+In file included from ../subprojects/tomlplusplus/src/toml.cpp:13:
+In file included from ../subprojects/tomlplusplus/include/toml++/toml.hpp:42:
+../subprojects/tomlplusplus/include/toml++/impl/path.hpp:793:19: warning: identifier '_tpath' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  793 |                 path operator"" _tpath(const char* str, size_t len)
+      |                      ~~~~~~~~~~~^~~~~~
+      |                      operator""_tpath
+In file included from ../subprojects/tomlplusplus/src/toml.cpp:13:
+In file included from ../subprojects/tomlplusplus/include/toml++/toml.hpp:54:
+../subprojects/tomlplusplus/include/toml++/impl/parser.hpp:348:27: warning: identifier '_toml' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+  348 |                 parse_result operator"" _toml(const char* str, size_t len)
+      |                              ~~~~~~~~~~~^~~~~
+      |                              operator""_toml
+2 warnings generated.

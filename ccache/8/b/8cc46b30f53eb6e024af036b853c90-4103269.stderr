@@ -1,0 +1,4 @@
+../subprojects/imgui/imgui.cpp:13634:20: warning: unused function 'NavUpdateWindowing' [-Wunused-function]
+ 13634 | static void ImGui::NavUpdateWindowing()
+       |                    ^~~~~~~~~~~~~~~~~~
+1 warning generated.

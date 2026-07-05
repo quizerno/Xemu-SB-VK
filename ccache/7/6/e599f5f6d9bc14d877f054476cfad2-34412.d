@@ -1,0 +1,21 @@
+libqemu-i386-softmmu.a.p/hw_xbox_nv2a_pgraph_swizzle.c.obj: \
+ ../hw/xbox/nv2a/pgraph/swizzle.c \
+ ../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/stdint.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/stdint.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/crtdefs.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/corecrt.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/_mingw.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/_mingw_mac.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ ../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/vadefs.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/vadefs.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ ../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/stddef.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/stddef.h \
+ ../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/__stddef_wchar_t.h \
+ ../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/__stddef_wint_t.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/string.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ ../../opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include/assert.h \
+ ../../opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include/stdbool.h \
+ ../hw/xbox/nv2a/pgraph/swizzle.h

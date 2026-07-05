@@ -1,0 +1,4 @@
+../ui/xemu-controllers.cc:30:15: warning: unused variable 'sbc_axes_count' [-Wunused-const-variable]
+   30 | constexpr int sbc_axes_count = 6;
+      |               ^~~~~~~~~~~~~~
+1 warning generated.

@@ -43,6 +43,8 @@ bool g_capture_renderdoc_frame = false;
 
 void ProcessKeyboardShortcuts(void)
 {
+	
+//CTRL+Hotkeys Here
     if (IsShortcutKeyPressed(ImGuiKey_E)) {
         ActionEjectDisc();
     }
@@ -62,21 +64,35 @@ void ProcessKeyboardShortcuts(void)
     if (IsShortcutKeyPressed(ImGuiKey_Q)) {
         ActionShutdown();
     }
+    if (IsShortcutKeyPressed(ImGuiKey_M)) {
+         if(g_config.display.ui.show_menubar){
+		 g_config.display.ui.show_menubar = false;}
+		 else{g_config.display.ui.show_menubar = true;}
+    }	
+    if (IsShortcutKeyPressed(ImGuiKey_C)) {
+         if(g_config.display.ui.hide_cursor){
+		 g_config.display.ui.hide_cursor = false;}
+		 else{g_config.display.ui.hide_cursor = true;}   
 
-    if (ImGui::IsKeyPressed(ImGuiKey_GraveAccent)) {
+		 }	
+	
+
+//Single Button hotkeys Here
+
+    if (ImGui::IsKeyPressed(ImGuiKey_GraveAccent) && g_config.input.hotkeys) {
         monitor_window.ToggleOpen();
     }
 
-    if (ImGui::IsKeyPressed(ImGuiKey_F12)) {
+    if (ImGui::IsKeyPressed(ImGuiKey_F12) && g_config.input.hotkeys) {
         ActionScreenshot();
     }
 
-    if (ImGui::IsKeyPressed(ImGuiKey_F11)) {
+    if (ImGui::IsKeyPressed(ImGuiKey_F11) && g_config.input.hotkeys) {
         xemu_toggle_fullscreen();
     }
 
 #ifdef CONFIG_RENDERDOC
-    if (ImGui::IsKeyPressed(ImGuiKey_F10) && nv2a_dbg_renderdoc_available()) {
+    if (ImGui::IsKeyPressed(ImGuiKey_F10) && nv2a_dbg_renderdoc_available() && g_config.input.ui.hotkeys) {
         ImGuiIO& io = ImGui::GetIO();
         int num_frames = io.KeyShift ? 5 : 1;
         nv2a_dbg_renderdoc_capture_frames(num_frames, io.KeyCtrl);

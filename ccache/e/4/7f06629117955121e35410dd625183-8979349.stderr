@@ -1,0 +1,22 @@
+In file included from ../ui/xui/update.cc:28:
+../subprojects/json-3.2.0/single_include/nlohmann/json.hpp:18863:35: warning: identifier '_json' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+ 18863 | inline nlohmann::json operator "" _json(const char* s, std::size_t n)
+       |                       ~~~~~~~~~~~~^~~~~
+       |                       operator""_json
+../subprojects/json-3.2.0/single_include/nlohmann/json.hpp:18881:49: warning: identifier '_json_pointer' preceded by whitespace in a literal operator declaration is deprecated [-Wdeprecated-literal-operator]
+ 18881 | inline nlohmann::json::json_pointer operator "" _json_pointer(const char* s, std::size_t n)
+       |                                     ~~~~~~~~~~~~^~~~~~~~~~~~~
+       |                                     operator""_json_pointer
+../subprojects/json-3.2.0/single_include/nlohmann/json.hpp:10175:43: warning: overlapping comparisons always evaluate to false [-Wtautological-overlap-compare]
+ 10175 |         const bool is_negative = (x <= 0) and (x != 0);  // see issue #755
+       |                                  ~~~~~~~~~^~~~~~~~~~~~
+../subprojects/json-3.2.0/single_include/nlohmann/json.hpp:9972:17: note: in instantiation of function template specialization 'nlohmann::detail::serializer<nlohmann::basic_json<>>::dump_integer<unsigned long long, 0>' requested here
+ 9972 |                 dump_integer(val.m_value.number_unsigned);
+      |                 ^
+../subprojects/json-3.2.0/single_include/nlohmann/json.hpp:13069:15: note: in instantiation of member function 'nlohmann::detail::serializer<nlohmann::basic_json<>>::dump' requested here
+ 13069 |             s.dump(*this, true, ensure_ascii, static_cast<unsigned int>(indent));
+       |               ^
+../subprojects/json-3.2.0/single_include/nlohmann/json.hpp:18827:20: note: in instantiation of member function 'nlohmann::basic_json<>::dump' requested here
+ 18827 |         return h(j.dump());
+       |                    ^
+3 warnings generated.

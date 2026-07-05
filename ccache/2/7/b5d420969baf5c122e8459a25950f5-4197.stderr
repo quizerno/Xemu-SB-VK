@@ -1,0 +1,15 @@
+clang version 20.1.0 (https://github.com/mxe/mxe.git db7f5247eaab700f28bb9b9433d279e5958f5f01)
+Target: x86_64-w64-windows-gnu
+Thread model: posix
+InstalledDir: /opt/mxe/usr/x86_64-pc-linux-gnu/bin
+Configuration file: /opt/mxe/usr/x86_64-pc-linux-gnu/bin/x86_64-w64-windows-gnu.cfg
+ (in-process)
+ "/opt/mxe/usr/x86_64-pc-linux-gnu/bin/clang-20" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/xemu/build/subprojects/SDL3-3.4.10/__CMake_build/CMakeFiles/CMakeScratch/TryCompile-h8Nykg -v -fcoverage-compilation-dir=/xemu/build/subprojects/SDL3-3.4.10/__CMake_build/CMakeFiles/CMakeScratch/TryCompile-h8Nykg -resource-dir /opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20 -isysroot /opt/mxe/usr/x86_64-w64-mingw32.static -internal-isystem /opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include -internal-isystem /opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include -internal-isystem /opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/usr/include -internal-isystem /opt/mxe/usr/x86_64-w64-mingw32.static/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o CMakeFiles/cmTC_443fa.dir/CMakeCCompilerABI.c.obj -x c ../../../../../../../../opt/mxe/usr/x86_64-pc-linux-gnu/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+clang -cc1 version 20.1.0 based upon LLVM 20.1.0 default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/mxe/usr/x86_64-pc-linux-gnu/lib/clang/20/include
+ /opt/mxe/usr/x86_64-w64-mingw32.static/x86_64-w64-mingw32/include
+ /opt/mxe/usr/x86_64-w64-mingw32.static/include
+End of search list.

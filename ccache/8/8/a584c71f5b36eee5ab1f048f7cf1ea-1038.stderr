@@ -1,0 +1,11 @@
+/xemu/build/subprojects/SDL3-3.4.10/__CMake_build/CMakeFiles/CMakeScratch/TryCompile-0Bwbdv/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'pow' [-Wincompatible-library-redeclaration]
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^
+<command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+    1 | #define CHECK_FUNCTION_EXISTS pow
+      |                               ^
+/xemu/build/subprojects/SDL3-3.4.10/__CMake_build/CMakeFiles/CMakeScratch/TryCompile-0Bwbdv/CheckFunctionExists.c:7:3: note: 'pow' is a builtin with type 'double (double, double)'
+<command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+    1 | #define CHECK_FUNCTION_EXISTS pow
+      |                               ^
+1 warning generated.

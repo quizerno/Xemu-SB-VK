@@ -1,0 +1,9 @@
+../util/miniz/miniz.c:2190:41: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+ 2190 | tdefl_compressor *tdefl_compressor_alloc()
+      |                                         ^
+      |                                          void
+../util/miniz/miniz.c:2931:45: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+ 2931 | tinfl_decompressor *tinfl_decompressor_alloc()
+      |                                             ^
+      |                                              void
+2 warnings generated.

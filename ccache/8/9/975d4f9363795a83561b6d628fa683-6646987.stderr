@@ -1,0 +1,47 @@
+In file included from ../hw/xbox/nv2a/pgraph/vk/command.c:20:
+In file included from ../hw/xbox/nv2a/pgraph/vk/renderer.h:38:
+../subprojects/VulkanMemoryAllocator/include/vk_mem_alloc.h:2245:5: warning: pointer is missing a nullability type specifier (_Nonnull, _Nullable, or _Null_unspecified) [-Wnullability-completeness]
+ 2245 |     HANDLE hTargetProcess, 
+      |     ^
+../subprojects/VulkanMemoryAllocator/include/vk_mem_alloc.h:2245:5: note: insert '_Nullable' if the pointer may be null
+ 2245 |     HANDLE hTargetProcess, 
+      |     ^
+      |            _Nullable
+../subprojects/VulkanMemoryAllocator/include/vk_mem_alloc.h:2245:5: note: insert '_Nonnull' if the pointer should never be null
+ 2245 |     HANDLE hTargetProcess, 
+      |     ^
+      |            _Nonnull
+../subprojects/VulkanMemoryAllocator/include/vk_mem_alloc.h:2246:5: warning: pointer is missing a nullability type specifier (_Nonnull, _Nullable, or _Null_unspecified) [-Wnullability-completeness]
+ 2246 |     HANDLE* VMA_NOT_NULL pHandle);
+      |     ^
+../subprojects/VulkanMemoryAllocator/include/vk_mem_alloc.h:2246:5: note: insert '_Nullable' if the pointer may be null
+ 2246 |     HANDLE* VMA_NOT_NULL pHandle);
+      |     ^     
+      |            _Nullable 
+../subprojects/VulkanMemoryAllocator/include/vk_mem_alloc.h:2246:5: note: insert '_Nonnull' if the pointer should never be null
+ 2246 |     HANDLE* VMA_NOT_NULL pHandle);
+      |     ^     
+      |            _Nonnull 
+../subprojects/VulkanMemoryAllocator/include/vk_mem_alloc.h:2296:5: warning: pointer is missing a nullability type specifier (_Nonnull, _Nullable, or _Null_unspecified) [-Wnullability-completeness]
+ 2296 |     HANDLE hTargetProcess, 
+      |     ^
+../subprojects/VulkanMemoryAllocator/include/vk_mem_alloc.h:2296:5: note: insert '_Nullable' if the pointer may be null
+ 2296 |     HANDLE hTargetProcess, 
+      |     ^
+      |            _Nullable
+../subprojects/VulkanMemoryAllocator/include/vk_mem_alloc.h:2296:5: note: insert '_Nonnull' if the pointer should never be null
+ 2296 |     HANDLE hTargetProcess, 
+      |     ^
+      |            _Nonnull
+../subprojects/VulkanMemoryAllocator/include/vk_mem_alloc.h:2297:5: warning: pointer is missing a nullability type specifier (_Nonnull, _Nullable, or _Null_unspecified) [-Wnullability-completeness]
+ 2297 |     HANDLE* VMA_NOT_NULL pHandle);
+      |     ^
+../subprojects/VulkanMemoryAllocator/include/vk_mem_alloc.h:2297:5: note: insert '_Nullable' if the pointer may be null
+ 2297 |     HANDLE* VMA_NOT_NULL pHandle);
+      |     ^     
+      |            _Nullable 
+../subprojects/VulkanMemoryAllocator/include/vk_mem_alloc.h:2297:5: note: insert '_Nonnull' if the pointer should never be null
+ 2297 |     HANDLE* VMA_NOT_NULL pHandle);
+      |     ^     
+      |            _Nonnull 
+4 warnings generated.
