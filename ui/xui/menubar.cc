@@ -79,20 +79,20 @@ void ProcessKeyboardShortcuts(void)
 
 //Single Button hotkeys Here
 
-    if (ImGui::IsKeyPressed(ImGuiKey_GraveAccent) && g_config.input.hotkeys) {
+    if (ImGui::IsKeyPressed(ImGuiKey_GraveAccent) && !!g_config.input.disable_hotkeys) {
         monitor_window.ToggleOpen();
     }
 
-    if (ImGui::IsKeyPressed(ImGuiKey_F12) && g_config.input.hotkeys) {
+    if (ImGui::IsKeyPressed(ImGuiKey_F12) && !g_config.input.disable_hotkeys) {
         ActionScreenshot();
     }
 
-    if (ImGui::IsKeyPressed(ImGuiKey_F11) && g_config.input.hotkeys) {
+    if (ImGui::IsKeyPressed(ImGuiKey_F11) && !g_config.input.disable_hotkeys) {
         xemu_toggle_fullscreen();
     }
 
 #ifdef CONFIG_RENDERDOC
-    if (ImGui::IsKeyPressed(ImGuiKey_F10) && nv2a_dbg_renderdoc_available() && g_config.input.ui.hotkeys) {
+    if (ImGui::IsKeyPressed(ImGuiKey_F10) && nv2a_dbg_renderdoc_available() && !g_config.input.disable_hotkeys) {
         ImGuiIO& io = ImGui::GetIO();
         int num_frames = io.KeyShift ? 5 : 1;
         nv2a_dbg_renderdoc_capture_frames(num_frames, io.KeyCtrl);

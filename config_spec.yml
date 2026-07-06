@@ -59,10 +59,8 @@ input:
   allow_vibration:
     type: bool
     default: true
-  hotkeys:
-    type: bool
-    default: false
   background_input_capture: bool
+  disable_hotkeys: bool
   keyboard_controller_scancode_map:
     # Scancode reference : https://github.com/libsdl-org/SDL/blob/main/include/SDL_scancode.h
     a:

@@ -648,7 +648,7 @@ void MainMenuInputView::Draw()
                 ImGui::TableSetupColumn("Emulated Input");
                 ImGui::TableSetupColumn("Host Input");
                 ImGui::TableHeadersRow();
-
+				PopulateTableSBC(bound_state);
                 ImGui::EndTable();
             }
             ImGui::PopStyleVar();
@@ -665,13 +665,14 @@ void MainMenuInputView::Draw()
     }
 
     SectionTitle("Options");
-	Toggle("Enable Hotkeys", &g_config.input.hotkeys,
-           "Turns on/off single button hotkeys");
     Toggle("Auto-bind controllers", &g_config.input.auto_bind,
            "Bind newly connected controllers to any open port");
     Toggle("Background controller input capture",
            &g_config.input.background_input_capture,
            "Capture even if window is unfocused (requires restart)");
+	Toggle("Disable Single Button Hotkeys",
+           &g_config.input.disable_hotkeys,
+           "Disable hotkeys that may interfere with keyboard controls");	   		   
 }
 
 void MainMenuInputView::Hide()
@@ -1115,7 +1116,7 @@ void MainMenuDisplayView::Draw()
 
     SectionTitle("Interface");
     Toggle("Show main menu bar", &g_config.display.ui.show_menubar,
-           "Show main menu. Hotkey CTRL+M");
+           "Show main menu. Hotkey: CTRL+M");
     Toggle("Show notifications", &g_config.display.ui.show_notifications,
            "Display notifications in upper-right corner");
     Toggle("Hide mouse cursor", &g_config.display.ui.hide_cursor,

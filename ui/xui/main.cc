@@ -267,8 +267,8 @@ void xemu_hud_update(void)
     // FIXME: Handle time wrap around
 	//removed the following from the if statement 
 	//&& (now - last_mouse_move) > 3000
-	
-    if (g_config.display.ui.hide_cursor) {
+	// !g_scene_mgr.IsDisplayingScene() allows the cursor to appear when the menu is open
+    if (g_config.display.ui.hide_cursor && !g_scene_mgr.IsDisplayingScene()) {
         ImGui::SetMouseCursor(ImGuiMouseCursor_None);
     }
 
@@ -288,9 +288,9 @@ void xemu_hud_update(void)
             menu_button = true;
         }
 
-        if (ImGui::IsKeyPressed(ImGuiKey_F1) && g_config.input.hotkeys) {
+        if (ImGui::IsKeyPressed(ImGuiKey_F1) && !g_config.input.disable_hotkeys) {
             g_scene_mgr.PushScene(g_main_menu);
-        } else if (ImGui::IsKeyPressed(ImGuiKey_F2)&& g_config.input.hotkeys) {
+        } else if (ImGui::IsKeyPressed(ImGuiKey_F2)&& !g_config.input.disable_hotkeys) {
             g_scene_mgr.PushScene(g_popup_menu);
         } else if (menu_button) {
             g_scene_mgr.PushScene(g_popup_menu);
@@ -300,7 +300,7 @@ void xemu_hud_update(void)
 //check this
         bool mod_key_down = ImGui::IsKeyDown(ImGuiKey_ModShift);
         for (int f_key = 0; f_key < 4; ++f_key) {
-            if (ImGui::IsKeyPressed((enum ImGuiKey)(ImGuiKey_F5 + f_key)) && g_config.input.hotkeys) {
+            if (ImGui::IsKeyPressed((enum ImGuiKey)(ImGuiKey_F5 + f_key)) && !g_config.input.disable_hotkeys) {
                 ActionActivateBoundSnapshot(f_key, mod_key_down);
                 break;
             }
