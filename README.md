@@ -1,6 +1,8 @@
 Fork of faha223/xemu 
 
-The ultimate goal of this is to create two seamless versions of xemu fork of usb_passthrough, one that uses vulkan and one that doesn't.
+While adding features for Steel Battalion, the ultimate goal of this is to create two seamless versions of xemu fork of usb_passthrough, one that uses vulkan and one that doesn't use vulkan.
+
+This project is part of my Steel Battalion Newcomer guide which focuses on the controller.
 
 **Features**
 * Option to turn On/Off hotkeys
