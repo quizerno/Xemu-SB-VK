@@ -17,6 +17,7 @@ This project is part of my Steel Battalion Newcomer guide which focuses on the c
 * Add Full Mouse Rebinding, Including Mousewheel.
 * Add Hotkey Rebinding
 * See if Keyboard+Gamepad combination play is possible
+* Add predefined keyboard maps for both Full Keyboards and 80% Keyboards.
 * Display cursor when settings menu is open (add from other build)
 * Implimentation of joystick additions that FluffyStuff added in his build
 * Including instructions for people who want to build on their own 
