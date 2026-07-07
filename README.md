@@ -1,10 +1,12 @@
 Fork of faha223/xemu 
 
+The ultimate goal of this is to create two seamless versions of xemu fork of usb_passthrough, one that uses vulkan and one that doesn't.
+
 **Features**
 * Option to turn On/Off hotkeys
 * Removes double click toggling fullscreen
 * New Hotkeys for Displaying/Hiding menu and cursor
-* Fully rebindable keyboard keys for Steel Battalion
+* Fully rebindable keyboard keys for Steel Battalion within the emulator
 * Minor fixes such as Steel Battalion Controller Graphic Display Improvements
 
 **To Do**
