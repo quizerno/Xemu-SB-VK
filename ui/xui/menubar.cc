@@ -45,23 +45,23 @@ void ProcessKeyboardShortcuts(void)
 {
 	
 //CTRL+Hotkeys Here
-    if (IsShortcutKeyPressed(ImGuiKey_E)) {
+    if (IsShortcutKeyPressed(ImGuiKey_E)&& !g_config.input.disable_ctrl) {
         ActionEjectDisc();
     }
 
-    if (IsShortcutKeyPressed(ImGuiKey_O)) {
+    if (IsShortcutKeyPressed(ImGuiKey_O)&& !g_config.input.disable_ctrl) {
         ActionLoadDisc();
     }
 
-    if (IsShortcutKeyPressed(ImGuiKey_P)) {
+    if (IsShortcutKeyPressed(ImGuiKey_P)&& !g_config.input.disable_ctrl) {
         ActionTogglePause();
     }
 
-    if (IsShortcutKeyPressed(ImGuiKey_R)) {
+    if (IsShortcutKeyPressed(ImGuiKey_R)&& !g_config.input.disable_ctrl) {
         ActionReset();
     }
 
-    if (IsShortcutKeyPressed(ImGuiKey_Q)) {
+    if (IsShortcutKeyPressed(ImGuiKey_Q)&& !g_config.input.disable_ctrl) {
         ActionShutdown();
     }
     if (IsShortcutKeyPressed(ImGuiKey_M)) {
@@ -69,7 +69,7 @@ void ProcessKeyboardShortcuts(void)
 		 g_config.display.ui.show_menubar = false;}
 		 else{g_config.display.ui.show_menubar = true;}
     }	
-    if (IsShortcutKeyPressed(ImGuiKey_C)) {
+    if (IsShortcutKeyPressed(ImGuiKey_C)&& !g_config.input.disable_ctrl) {
          if(g_config.display.ui.hide_cursor){
 		 g_config.display.ui.hide_cursor = false;}
 		 else{g_config.display.ui.hide_cursor = true;}   
@@ -79,7 +79,7 @@ void ProcessKeyboardShortcuts(void)
 
 //Single Button hotkeys Here
 
-    if (ImGui::IsKeyPressed(ImGuiKey_GraveAccent) && !!g_config.input.disable_hotkeys) {
+    if (ImGui::IsKeyPressed(ImGuiKey_GraveAccent) && !g_config.input.disable_hotkeys) {
         monitor_window.ToggleOpen();
     }
 

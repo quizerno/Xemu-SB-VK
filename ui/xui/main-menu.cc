@@ -672,7 +672,10 @@ void MainMenuInputView::Draw()
            "Capture even if window is unfocused (requires restart)");
 	Toggle("Disable Single Button Hotkeys",
            &g_config.input.disable_hotkeys,
-           "Disable hotkeys that may interfere with keyboard controls");	   		   
+           "Disable hotkeys that may interfere with keyboard controls");
+	Toggle("Disable Ctrl-Button Hotkeys",
+           &g_config.input.disable_ctrl,
+           "Disables all Ctrl+ Hotkeys except Ctrl+M");	
 }
 
 void MainMenuInputView::Hide()

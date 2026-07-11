@@ -294,8 +294,8 @@ void xemu_hud_update(void)
             g_scene_mgr.PushScene(g_popup_menu);
         } else if (menu_button) {
             g_scene_mgr.PushScene(g_popup_menu);
-        } else if (ImGui::IsMouseDoubleClicked(ImGuiMouseButton_Left)) {
-            //xemu_toggle_fullscreen();
+        } else if (ImGui::IsMouseDoubleClicked(ImGuiMouseButton_Left) && !g_config.display.ui.doubleclick) {
+            xemu_toggle_fullscreen();
         }
 //check this
         bool mod_key_down = ImGui::IsKeyDown(ImGuiKey_ModShift);

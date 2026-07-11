@@ -61,8 +61,6 @@ input:
     default: true
   background_input_capture: bool
   disable_hotkeys: bool
-  disable_ctrl: bool
-  disable_doubleclick: bool
   keyboard_controller_scancode_map:
     # Scancode reference : https://github.com/libsdl-org/SDL/blob/main/include/SDL_scancode.h
     a:
@@ -143,16 +141,16 @@ input:
   keyboard_sbc_scancode_map:
     eject:
       type: integer
-      default: 69 # F12
+      default: 41 # esc
     cockpit_hatch:
       type: integer
-      default: 86 # NUM MINUS
+      default: 62 # F5
     ignition:
       type: integer
-      default: 87 # NUM PLUS
+      default: 63 # F6
     start:
       type: integer
-      default: 88 # NUM ENTER
+      default: 64 # F7
     open_close:
       type: integer
       default: 74 # home
@@ -161,16 +159,16 @@ input:
       default: 77 # end
     mode_select:
       type: integer
-      default: 73 # insert (73)
+      default: 73 # insert
     sub_monitor_mode_select:
       type: integer
-      default: 76 # delete (76)
+      default: 76 # delete
     zoom_in:
       type: integer
-      default: 31 # Page Up (75) or 2 (31)
+      default: 75 # Page Up
     zoom_out:
       type: integer
-      default: 30 # Page Down (78) or 1 (30)
+      default: 78 # Page Down
     fss:
       type: integer
       default: 97 # numpad 9
@@ -179,16 +177,16 @@ input:
       default: 94 # numpad 6
     line_color_change:
       type: integer
-      default: 91 # numpad 3 CODE 91 sometimes needs to be switched with night scope
+      default: 91 # numpad 3
     washing:
       type: integer
-      default: 28 # Y
+      default: 45 # -
     extinguisher:
       type: integer
-      default: 24 # U
+      default: 8 # e
     chaff:
       type: integer
-      default: 12 # I
+      default: 6 # c
     tank_detach:
       type: integer
       default: 96 # numpad 8
@@ -197,7 +195,7 @@ input:
       default: 93 # numpad 5
     night_scope:
       type: integer
-      default: 90 # numpad 2 CODE 90 sometimes needs to be switched with line color change
+      default: 90 # numpad 2
     func1:
       type: integer
       default: 95 # numpad 7
@@ -209,52 +207,52 @@ input:
       default: 89 # numpad 1
     main_weapon_control:
       type: integer
-      default: 11 # H also middle mouse
+      default: 35 # 6
     sub_weapon_control:
       type: integer
-      default: 13 # J 
+      default: 36 # 7
     magazine_change:
       type: integer
-      default: 14 # K also middle mouse
+      default: 21 # r
     com1:
       type: integer
-      default: 32 # 1 (30) or 3 (32)
+      default: 30 # 1
     com2:
       type: integer
-      default: 33 # 2 (31) or 4 (33)
+      default: 31 # 2
     com3:
       type: integer
-      default: 34 # 3 (32) or 5 (34)
+      default: 32 # 3
     com4:
       type: integer
-      default: 35 # 4 (33) or 6 (35) 
+      default: 33 # 4
     com5:
       type: integer
-      default: 36 # 5 (34) or 7 (36)
+      default: 34 # 5
     sight_change:
       type: integer
-      default: 27 # x or middle mouse
+      default: 20 # q
     filt_control_system:
       type: integer
-      default: 58 # F1
+      default: 65 # F8
     oxygen_supply_system:
       type: integer
-      default: 59 # F2
+      default: 66 # F9
     fuel_flow_rate:
       type: integer
-      default: 60 # F3
+      default: 67 # F10
     buffer_material:
       type: integer
-      default: 61 # F4
+      default: 68 # F11
     vt_location_measurement:
       type: integer
-      default: 62 # F5
+      default: 69 # F12
     gear_up:
       type: integer
-      default: 43 # lshift (225) or tab (43)
+      default: 225 # lshift
     gear_down:
       type: integer
-      default: 225 # lctrl (224) or lshift (225)
+      default: 224 # lctrl
     tuner_left:
       type: integer
       default: 54 # <
@@ -263,31 +261,31 @@ input:
       default: 55 # >
     sight_change_up:
       type: integer
-      default: 26 # up(82) or W(26)
+      default: 82 # up
     sight_change_down:
       type: integer
-      default: 22 # down(81) or S(22)
+      default: 81 # down
     sight_change_left:
       type: integer
-      default: 4 # left(80) or A(4)
+      default: 80 # left
     sight_change_right:
       type: integer
-      default: 7 # right(79) or D(7)
+      default: 79 # right
     rotation_left:
       type: integer
-      default: 20 # a(4) or Q(20)
+      default: 4 # a
     rotation_right:
       type: integer
-      default: 8 # d(7) or E(8)
+      default: 7 # d
     left_pedal:
       type: integer
-      default: 224 #L-CTRL
+      default: 44 #space
     right_pedal:
       type: integer
-      default: 44 # SPACE
+      default: 26 # w
     middle_pedal:
       type: integer
-      default: 6 # C
+      default: 22 # s
     # sight_change_x: #correct?
        # type: integer
        # default: 0         
