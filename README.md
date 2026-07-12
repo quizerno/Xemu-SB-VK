@@ -1,8 +1,9 @@
+# Intro
 Fork of faha223/xemu 
 
 While adding features for Steel Battalion, the ultimate goal of this is to create two seamless versions of xemu fork of usb_passthrough, one that uses vulkan and one that doesn't use vulkan.
 
-This project is part of my Steel Battalion Newcomer guide which focuses on the controller.
+This project is part of my Steel Battalion Newcomer guide which focuses on the controller. I am working with SpecialFred.
 
 **Features**
 * Option to turn On/Off hotkeys
@@ -13,12 +14,12 @@ This project is part of my Steel Battalion Newcomer guide which focuses on the c
 
 **To Do**
 * Add all features to the non-vulkan branch version
-* Fix Bug where Steel Battalion Controller Graphic Display does not show rebinds until restart
+* Make non-vulkan and vulkan have the same hotkeys
+* Fix Bug where Keyboard Steel Battalion Controller does not rebind until restart
 * Add Full Mouse Rebinding, Including Mousewheel.
 * Add Hotkey Rebinding
 * See if Keyboard+Gamepad combination play is possible
 * Add predefined keyboard maps for both Full Keyboards and 80% Keyboards.
-* Display cursor when settings menu is open (add from other build)
 * Implimentation of joystick additions that FluffyStuff added in his build
 * Including instructions for people who want to build on their own 
 
@@ -26,36 +27,30 @@ This project is part of my Steel Battalion Newcomer guide which focuses on the c
 **Bugs**
 List here
 
+# How to Build
+Build in linux of WSL, be sure to install podman or docker.
 
-
-
-**Build Snippits**
-git clone -b usb_passthrough_vk https://github.com/faha223/xemu.git [optional directory name] --recurse-submodules
-git clone -b usb_passthrough_vk https://github.com/avibodek/Xemu-SB-VK.git [optional directory name] --recurse-submodules
-
-
-git clone -b usb_passthrough https://github.com/faha223/xemu.git  [optional directory name] --recurse-submodules
-git clone -b usb_passthrough https://github.com/avibodek/Xemu-SB-VK.git [optional directory name] --recurse-submodules
-
-
-git clone -b usb_passthrough_vk https://github.com/faha223/xemu.git [optional directory name] --recurse-submodules
-Building vk
-
-
-
-
-docker run --rm -v $PWD/Xemu-SB-VK:/xemu -w /xemu \
+**Building Vulkan** 
+`git clone -b usb_passthrough_vk https://github.com/faha223/xemu.git Xemu-SB-VK --recurse-submodules`
+Then build with:
+`docker run --rm -v $PWD/Xemu-SB-VK:/xemu -w /xemu \
     -e CCACHE_DIR=/xemu/ccache --platform linux/amd64 \
     ghcr.io/xemu-project/xemu-win64-toolchain:latest \
-    /bin/bash -c "apt-get update && apt-get install -qy curl && ./build.sh -p win64-cross"
+    /bin/bash -c "apt-get update && apt-get install -qy curl && ./build.sh -p win64-cross"`
+Run with:
+`    ./dist/xemu`
 
-Building non-Vk
-
-
-docker run --rm -v $PWD/xemu:/xemu -w /xemu \
+**Building Non-Vulkan**
+Clone with:
+`git clone -b usb_passthrough https://github.com/avibodek/Xemu-SB-VK.git Xemu-SB-NVK --recurse-submodules`
+Then build with:
+`docker run --rm -v $PWD/Xemu-SB-NVK:/xemu -w /xemu \
     -e CCACHE_DIR=/xemu/ccache --platform linux/amd64 \
     ghcr.io/xemu-project/xemu-win64-toolchain:sha-8152913 \
     /bin/bash -c "cd /opt/mxe && \
     make MXE_TARGETS=x86_64-w64-mingw32.static MXE_PLUGIN_DIRS=plugins/gcc13 libusb1 && \
     cd /xemu && \
-    ./build.sh -p win64-cross --enable-libusb"
+    ./build.sh -p win64-cross --enable-libusb"`
+Run with:
+`    ./dist/xemu`
+
