@@ -79,7 +79,7 @@ Run with:
 
 ## Notes on Adding Settings to the Menu
 
-**main directory\config_spec.yml** - Global variables including default control scheme
+**/config_spec.yml** - Global variables including default control scheme
 
 **//ui/xui/main-menu.cc** -- Adding options to the menu
 
