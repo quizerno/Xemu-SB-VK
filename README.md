@@ -5,6 +5,9 @@ While adding features for Steel Battalion, the ultimate goal of this is to creat
 
 This project is part of my Steel Battalion Newcomer guide which focuses on the controller. I am working with SpecialFred.
 
+**Limitations**
+* For OG Steel Battalion only the first four level are effectively playable (on Vulkan)
+* Struggling with LoC optimization
 
 **Features**
 * Option to turn On/Off hotkeys
@@ -86,7 +89,7 @@ Run with:
 
 **//ui/xui/actions.cc** -- Some notifications
 
-##Other helpful links
+## Other helpful links
 
 https://github.com/Ryzee119/ogx360_t4/
 
