@@ -31,7 +31,7 @@ List here
 Build in linux of WSL, be sure to install podman or docker. You must be in the directory with the build folder to build.
 You may substitude Xemu-SB-VK or Xemu-SB-NVK with any directory name you want. The default directory will be "xemu" otherwise.
 
-## Building Vulkan
+## Building Vulkan (for Windows)
 Clone with:
 
 `git clone -b usb_passthrough_vk https://github.com/faha223/xemu.git Xemu-SB-VK --recurse-submodules`
@@ -48,7 +48,7 @@ Run with:
 
 `    ./dist/xemu`
 
-## Building Non-Vulkan
+## Building Non-Vulkan (for windows)
 
 Clone with:
 
