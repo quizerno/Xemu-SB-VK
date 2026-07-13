@@ -5,6 +5,7 @@ While adding features for Steel Battalion, the ultimate goal of this is to creat
 
 This project is part of my Steel Battalion Newcomer guide which focuses on the controller. I am working with SpecialFred.
 
+
 **Features**
 * Option to turn On/Off hotkeys
 * Option to turn On/Off click toggling fullscreen
@@ -21,15 +22,18 @@ This project is part of my Steel Battalion Newcomer guide which focuses on the c
 * See if Keyboard+Gamepad combination play is possible
 * Add predefined keyboard maps for both Full Keyboards and 80% Keyboards.
 * Implimentation of joystick additions that FluffyStuff added in his build
-* Including instructions for people who want to build on their own 
+* Including instructions for people who want to build on their own.
+* Proper documentation for interactions with libusb: https://github.com/faha223/XboxPeripheralLibusbTools/
 
 
 **Bugs**
 List here
 
 # How to Build
-Build in linux of WSL, be sure to install podman or docker. You must be in the directory with the build folder to build.
+Build in linux or WSL, be sure to install podman or docker. You must be in the directory with the build folder to build.
 You may substitude Xemu-SB-VK or Xemu-SB-NVK with any directory name you want. The default directory will be "xemu" otherwise.
+
+Other information on building Xemu can be found here: https://xemu.app/docs/dev/building-from-source/
 
 ## Building Vulkan (for Windows)
 Clone with:
