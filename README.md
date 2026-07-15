@@ -108,3 +108,5 @@ Run with:
 * https://github.com/faha223/XboxPeripheralLibusbTools/
 
 * https://xemu.app/docs/dev/building-from-source/
+
+* https://github.com/dmadison/ArduinoXInput_Teensy
