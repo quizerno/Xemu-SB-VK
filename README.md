@@ -56,7 +56,7 @@ Other information on building Xemu can be found here: https://xemu.app/docs/dev/
 ## Building Vulkan (for Windows)
 Clone with:
 
-`git clone -b usb_passthrough_vk https://github.com/faha223/xemu.git Xemu-SB-VK --recurse-submodules`
+`git clone -b usb_passthrough_vk https://github.com/quizerno/Xemu-SB-VK.git Xemu-SB-VK --recurse-submodules`
 
 Then build with:
 ```
@@ -74,7 +74,7 @@ Run with:
 
 Clone with:
 
-`git clone -b usb_passthrough https://github.com/avibodek/Xemu-SB-VK.git Xemu-SB-NVK --recurse-submodules`
+`git clone -b usb_passthrough https://github.com/faha223/xemu.git Xemu-SB-NVK --recurse-submodules`
 
 Then build with:
 
