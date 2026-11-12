@@ -94,7 +94,8 @@ Run with:
 
 
 # Commands within Xemu
-* device_add usb-host,vendorid=0x0a7b,productid=0xd000,port=1.3
+* info usbhost (views usb devices recognized by xemu)
+* device_add usb-host,vendorid=0x0a7b,productid=0xd000,port=1.3 (force adds the Steel Battalion Controller if it is connected, port may differ)
 
 ## Notes on Adding Settings to the Menu
 
